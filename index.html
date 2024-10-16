@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="flex">
+        <a href="https://open.spotify.com" >
+            <img src="assests/images/logoMain.svg" height="80" width="80" alt="logo">
+        </a>
+        <div class="topnav-centre flex">
+            <div class="circle">
+                <img class="svg" src="assests/images/home.svg" alt="home">
+            </div>
+            <div class="searchbar flex">
+                <button>
+                    <img class="svg" src="assests/images/search.svg" alt="search">
+                </button>
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button class="sign-up">Sign Up</button>
+            <button class="logIn">Log in</button>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="left-box">
+            <header class="flex">
+                <button class="flex">
+                    <img class="svg" src="assests/images/lib.svg" alt="lib">
+                    Your library
+                </button>
+                <button>
+                    <img class="cross svg" src="assests/images/cross.svg" alt="cross">
+                </button>
+            </header>
+            <main>
+                <!-- <section class=playlistCard> 
+                    <h4>Create your first playlist</h4>
+                    <h5>It's easy we'll help you</h5>
+                    <button>Create playlist</button>
+                </section> -->
+                <ul class="songList">
+                    <!-- <li class="flex">
+                      <img src="assests/images/list-music.svg" alt="list-music">
+                      <div class="info">
+                        Song name
+                        <h5>Song artist</h5>
+                      </div> 
+                    </li> -->
+                </ul>
+            </main>
+            <footer>
+                <div class="anchors">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety & Privacy Centre</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                <button class="flex">
+                    <img class="svg" src="assests/images/web.svg" alt="web">
+                    English
+                </button>
+            </footer>
+        </div>
+        <div class="right-box">
+            <section class="playlists">
+                <div class="playlists-heading ">  
+                    <img class="svg hamburger" src="assests/images/hamburger.svg" alt="hamburger">
+                    <h2>Your Playlists</h2>
+                </div>
+                <div class="cardContainer">
+                    <!-- <div data-folder="temp" class="card">
+                        <img src="https://i.scdn.co/image/ab67706f000000024a61230da4b1d555b4ddd3f5" alt="pop music">
+                        <p>A.R. Rehman</p>
+                        <img class="playbtn" src="assests/images/playbtn.svg" alt="playbtn">
+                    </div>                
+                    <div data-folder="atifaslam" class="card">
+                        <img src="https://i.scdn.co/image/ab67706f000000024a61230da4b1d555b4ddd3f5" alt="pop music">
+                        <p>The most interesting tracks in the current world of pop music.</p>
+                        <img class="playbtn" src="assests/images/playbtn.svg" alt="playbtn">
+                    </div> -->
+                </div>
+            </section>
+            <section class="playBar">
+                <div class="musicInfo flex">
+                    <img class="svg" src="assests/images/list-music.svg" alt="list-music">
+                    <div class="info">
+
+                    </div>
+                </div>
+                <div class="playBarCentre">
+                    <div class="musicButtons flex justify-content align-items">
+                        <button class="prev">
+                            <img src="assests/images/prev.svg" alt="prev">
+                        </button>
+                        <button class="music-play">
+                            <img src="assests/images/Play-Pause-play.svg" alt="music-play">
+                        </button>
+                        <button class="next">
+                            <img src="assests/images/next.svg" alt="next">
+                        </button>
+                    </div>
+                    <div class="progress flex">
+                        <div class="musicCurrTime">00:00</div>
+                        <div class="progressBar">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="musicTotalTime">00:00</div>
+                    </div>
+                </div>
+                <button class="volume">
+                    <img src="assests/images/volume.svg" alt="volume">
+                    <input type="range" name="volume" >
+                </button>
+            </section>
+            <!--<footer>
+                <div class="footercontainer">
+                    <div class="left-footer">
+                        <ul>
+                            <p>Company</p>
+                            <a href="https://www.spotify.com/in-en/about-us/contact/">About</a>
+                            <a href="https://www.lifeatspotify.com/">Jobs</a>
+                            <a href="https://newsroom.spotify.com/">For the Record</a>
+                        </ul>
+
+                        <ul>
+                            <p>Communities</p>
+                            <a href="https://artists.spotify.com/">For Artists</a>
+                            <a href="https://developer.spotify.com/">Developers</a>
+                            <a href="https://ads.spotify.com/">Advertising</a>
+                            <a href="https://investors.spotify.com/">Investors</a>
+                            <a href="https://spotifyforvendors.com/">Vendors</a>
+                        </ul>
+
+                        <ul>
+                            <p>Useful links</p>
+                            <a href="https://support.spotify.com/">Support</a>
+                            <a href="https://www.spotify.com/in-en/free/">Free Mobile App</a>
+                        </ul>
+
+                        <ul>
+                            <p>Spotify Plans</p>
+                            <a href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual">Premium
+                                Individual</a>
+                            <a href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo">Premium
+                                Duo</a>
+                            <a href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family">Premium
+                                Family</a>
+                            <a href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student">Premium
+                                Student</a>
+                            <a href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free">Spotify Free</a>
+                        </ul>
+                    </div>
+                    <div class="right-footer">
+                        <div class="circle">
+                            <a href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram"
+                                target="_blank" rel="noopener noreferrer">
+                                <img class="svg" src="assests/images/insta.svg" alt="insta">
+                            </a>
+                        </div>
+                        <div class="circle">
+                            <a href="https://twitter.com/spotify" aria-label="Twitter" title="Twitter" target="_blank"
+                                rel="noopener noreferrer">
+                                <img class="svg" src="assests/images/twitter.svg" alt="twitter">
+                            </a>
+                        </div>
+                        <div class="circle">
+                            <a href="https://facebook.com/spotify" aria-label="Facebook" title="Facebook"
+                                target="_blank" rel="noopener noreferrer">
+                                <img class="svg" src="assests/images/facebook.svg" alt="facebook">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="separation"></div>
+                <p>© 2024 Spotify AB</p>
+            </footer> -->
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- 
+    
+    
+    
+    
+    
+    
+    
+    

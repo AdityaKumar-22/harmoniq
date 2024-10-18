@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0; padding: 0;
+    box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -29,7 +30,7 @@ body{
 /* Custom Scrollbar for a dark theme */
 ::-webkit-scrollbar {
     width: 8px;               /* Width of the scrollbar */
-  }
+}
   
   ::-webkit-scrollbar-track {
     background: #2e2e2e;      /* Darker track background */

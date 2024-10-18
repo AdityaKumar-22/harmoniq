@@ -1,20 +1,27 @@
+body{
+    height: 100vh;
+}
 nav{
     background-color: black;
     justify-content: space-between;
-    padding: 12px 18px;
-
+    align-items: center;
+    padding: 6px 18px;
+    height: 8%;
 }
 
 nav .circle{
     display: flex;
     align-items: normal;
-    height: 24px;
-    padding: 13px;
+    height: 50px;
+    width: 50px;
+    /* padding: 13px; */
     background-color: rgb(31, 31, 31);
-    width: 24px;
     border-radius: 50%;
     margin: 0 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .searchbar{
     background-color: rgb(42, 42, 42);
@@ -78,11 +85,11 @@ nav .circle{
     display: flex;
     gap: 8px;
     padding: 8px;
+    height: 92%;
 }
 .left-box{
     background-color: rgb(18, 18, 18);
     width: 25vw;
-    height: 88vh;
     border-radius: 8px;
     position: relative;
 }
@@ -209,6 +216,7 @@ nav .circle{
 .playlists{
     background-color: rgb(34, 34, 34);
     border-radius: 8px;
+    height: 88%;
     padding: 30px;
     padding-bottom: 0;
 }
@@ -266,9 +274,8 @@ nav .circle{
 
 /* section playBar*/
 .right-box .playBar{
-    height: 11.5vh;
+    height: 11%;
     width: 100%;
-    margin-top: 7px;
     border-radius: 8px;
     background: linear-gradient(to top, #575757 0%, #6c6969 50%, #575757 100%);
     display: flex;
@@ -317,8 +324,11 @@ nav .circle{
     /* width: 100px; */
 }
 .right-box{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
     width: 75vw;
-    height: 90vh;
+    /* height: 90vh; */
     position: relative;
 }
 /*rightbox footer*/
